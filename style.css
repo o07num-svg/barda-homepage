@@ -69,3 +69,26 @@ footer{padding:30px 9%;font-size:11px;color:#888;display:flex;justify-content:sp
     word-break:keep-all;
   }
 }
+/* 바르다 강점 소개 모바일 제목 수정 */
+@media (max-width: 600px) {
+  .features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 22px 4%;
+  }
+  .features > div {
+    min-width: 0;
+    padding: 18px 10px;
+  }
+  .features h3 {
+    font-size: clamp(14px, 3.6vw, 17px);
+    letter-spacing: -0.8px;
+    line-height: 1.55;
+    word-break: keep-all;
+    overflow-wrap: normal;
+  }
+  .features p {
+    font-size: 12px;
+    line-height: 1.7;
+    word-break: keep-all;
+  }
+}
